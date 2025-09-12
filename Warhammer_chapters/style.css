@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'First Legion';
+    src: url('fontes/First\ Legion.otf') format('opentype');
+    src: url('fontes/First\ Legion.ttf') format('truetype');
+}
+
+body {
+    font-family: 'First Legion', serif;
+    text-align: center;
+    transition: background 0.5s;
+    margin: 0;
+    padding: 0;
+    background-image: url('imagens/background2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+    overflow: hidden;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    text-align: center;
+    margin-top: -150px;
+}
+
+#capitulo-img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    margin-top: -50px;
+}
+
+#capitulo-img:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s;
+}
+
+#capitulo-desc {
+    max-width: 600px;
+    font-size: 18px;
+    color:black;
+    text-shadow: -2px -2px 5px white,
+        2px 2px 5px white;
+}
+
+#capitulo-desc:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s;
+}
+
+header {
+    background-image: url('imagens/background1.jpg');
+    background-size: cover;
+    background-position: center 25%;
+    box-shadow: 10px 5px 10px black;
+    border-radius: 10px;
+    color: rgb(154, 87, 0);
+    text-shadow: -2px -2px 5px black,
+        2px 2px 5px black;
+    padding: 10px;
+}
+
+.button {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    font-family: 'First Legion', serif;
+    display: flex;
+    width: 170px;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    transition: transform 0.2s, box-shadow 0.3s;
+    box-shadow: 10px 5px 10px black;
+    text-shadow: -2px -2px 5px white,
+        2px 2px 5px white;
+    width: auto;
+    background-color: transparent;
+}
+
+.btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+.ultramarines:hover {
+    background-color: blue;
+}
+
+.bloodangels:hover {
+    background-color: red;
+}
+
+.darkangels:hover {
+    background-color: rgb(1, 58, 1);
+}
+
+.salamanders:hover {
+    background-color: green;
+}
+
+.imperialfists:hover {
+    background-color: yellow;
+}
