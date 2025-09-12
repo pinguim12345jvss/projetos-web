@@ -2,7 +2,16 @@ function showChapter(chapter) {
     const img = document.getElementById("capitulo-img");
     const desc = document.getElementById("capitulo-desc");
     const body = document.body;
+    const header = document.querySelector('header');
 
+    //Função para o header
+    header.addEventListener('click', () => {
+        body.style.backgroundImage = 'url("imagens/background2.jpg")';
+        img.src = '';
+        desc.textContent = '';
+    });
+
+    //Adiciona conteudo aos capitulos
     const chapters = {
         ultramarines: {
             fundo: "url('imagens/ultramarines.jpg')",
@@ -33,6 +42,7 @@ function showChapter(chapter) {
         }
     };
 
+    //Função para inserir as imagens e descrição
     if (chapters[chapter]) {
         body.style.backgroundImage = chapters[chapter].fundo;
         body.style.backgroundSize = "cover"; // Adiciona a propriedade de redimensionamento para cobrir a tela

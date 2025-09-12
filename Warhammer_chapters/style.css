@@ -22,14 +22,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:flex-start;
+    justify-content: flex-start;
     text-align: center;
     margin-top: -150px;
 }
 
 #capitulo-img {
-    width: 400px;
     height: 400px;
+    width: 400px;
     object-fit: contain;
     margin-top: -50px;
 }
@@ -42,7 +42,7 @@ body {
 #capitulo-desc {
     max-width: 600px;
     font-size: 18px;
-    color:black;
+    color: black;
     text-shadow: -2px -2px 5px white,
         2px 2px 5px white;
 }
@@ -62,6 +62,12 @@ header {
     text-shadow: -2px -2px 5px black,
         2px 2px 5px black;
     padding: 10px;
+}
+
+header:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s;
+    cursor: pointer;
 }
 
 .button {
@@ -101,6 +107,7 @@ header {
 .btn:hover {
     transform: scale(1.03);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
 }
 
 .ultramarines:hover {
