@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Legend of Zelda Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!--Menu-->
+
+<body>
+    <header>
+        <h1>The Legend of Zelda</h1>
+        <nav>
+            <ul id="menu">
+                <li class="dropdown">
+                    <a href="#" id="dropdownBtn">Game List</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#" onclick="openGame('oot')">Ocarina of Time</a></li>
+                        <li><a href="#" onclick="openGame('mm')">Majora's Mask</a></li>
+                        <li><a href="#" onclick="openGame('tp')">Twilight Princess</a></li>
+                        <li><a href="#" onclick="openGame('ww')">Wind Waker</a></li>
+                        <li><a href="#" onclick="openGame('ss')">Skyward Sword</a></li>
+                        <li><a href="#" onclick="openGame('botw')">Breath of the Wild</a></li>
+                        <li><a href="#" onclick="openGame('totk')">Tears of the Kingdom</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Game Gallery-->
+
+    <main>
+        <h2>Zelda 3D Era Games</h2>
+        <div class="gallery">
+            <div class="game" onclick="openGame('oot')">
+                <img src="images/oot_title.webp" alt="Ocarina of Time">
+                <p>Ocarina of Time</p>
+            </div>
+            <div class="game" onclick="openGame('mm')">
+                <img src="images/mm_title.jpg" alt="Majora's Mask">
+                <p>Majora's Mask</p>
+            </div>
+            <div class="game" onclick="openGame('ww')">
+                <img src="images/ww_title.jpg" alt="Wind Waker">
+                <p>Wind Waker</p>
+            </div>
+            <div class="game" onclick="openGame('tp')">
+                <img src="images/tp_title.png" alt="Twilight Princess">
+                <p>Twilight Princess</p>
+            </div>
+            <div class="game" onclick="openGame('ss')">
+                <img src="images/ss_title.jpg" alt="Skyward Sword">
+                <p>Skyward Sword</p>
+            </div>
+            <div class="game" onclick="openGame('botw')">
+                <img src="images/botw_title.png" alt="Breath of the Wild">
+                <p>Breath of the Wild</p>
+            </div>
+            <div class="game" onclick="openGame('totk')">
+                <img src="images/totk_title.webp" alt="Tears of the Kingdom">
+                <p>Tears of the Kingdom</p>
+            </div>
+        </div>
+    </main>
+
+    <!--Game Description-->
+
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="gameImage" src="" alt="">
+            <h2 id="gameTitle"></h2>
+            <p id="gameDescription"></p>
+        </div>
+    </div>
+
+    <!--Footer-->
+
+    <footer>
+        <p>© 2025 Zelda Fan Page - Created for study purposes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
